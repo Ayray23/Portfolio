@@ -57,7 +57,17 @@ const Home = () => {
           <li>
             <NavLink to='/Service'>Service</NavLink>
           </li>
-        </ul> 
+        </ul>
+        <button 
+          className=" h-1 bg-neutral-900 dark:bg-white rounded-full text-white dark:text-black font-semibold"
+          onClick={toggleDarkMode}
+          >
+          {darkMode ? 
+            <TiAdjustBrightness size={24} className="text-white dark:text-black" /> 
+            : 
+            <FaMoon size={24} className="text-white dark:text-black" />
+          }
+        </button> 
         <button
           className="md:hidden text-3xl"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -85,9 +95,7 @@ const Home = () => {
                 
                 </li>
             </ul>
-          </div>
-        )}
-        <button 
+            <button 
           className=" h-1 bg-neutral-900 dark:bg-white rounded-full text-white dark:text-black font-semibold"
           onClick={toggleDarkMode}
           >
@@ -96,7 +104,10 @@ const Home = () => {
             : 
             <FaMoon size={24} className="text-white dark:text-black" />
           }
-</button>
+          </button>
+          </div>
+        )}
+        
 
       </div>
     </nav>
