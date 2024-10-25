@@ -144,21 +144,21 @@ const Home = () => {
                   <h1 className='text-3xl'>
                     About me
                   </h1>
-                  <p className='mt-8 mx-16 font-serif font-medium'>
+                  <p className='mt-8  md:mx-16 font-serif font-medium'>
                     I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.
                   </p>
-                  <div className='flex md:flex-row flex-col md:items-center mt-6  md:justify-center gap-8'>
-                    <div className='border-2 h-[200px] hover:shadow-lg hover:shadow-white text-center  p-4 w-[400px] md:w-[200px]  dark:border-white border-black '>
+                  <div className='flex md:flex-row md:ml-16 flex-col md:items-center mt-6  md:justify-center gap-8'>
+                    <div className='border-2 h-[200px] ml-4  hover:shadow-lg hover:shadow-white text-center  p-4 w-[350px] md:w-[200px]  dark:border-white border-black '>
                       { <PiPentagramBold className='text-3xl md:ml-16 ml-40' /> }
                       <h2 className='text-2xl'>Languages</h2>
                       <p className=''>HTML,CSS, <md:br />JavaScript, <br />React Js, <md:br />Vite</p>
                     </div>
-                    <div className='border-2 hover:shadow-lg hover:shadow-white  h-[200px] text-center p-4 w-[400px]  md:w-[200px] border-black dark:border-white '>
+                    <div className='border-2 hover:shadow-lg hover:shadow-white  h-[200px] text-center p-4 ml-4 w-[350px]  md:w-[200px] border-black dark:border-white '>
                       { <FaGraduationCap className='text-3xl md:ml-16 ml-40' /> }
                       <h2 className='text-2xl'>Education</h2>
                       <p>B.Tech in <md:br /> Software <md:br /> Engineering</p>
                     </div>
-                    <div className='border-2 h-[200px] hover:shadow-lg hover:shadow-white  text-center p-4 w-[400px] md:w-[200px] border-black dark:border-white '>
+                    <div className='border-2 h-[200px] hover:shadow-lg hover:shadow-white  text-center p-4 ml-4 w-[350px] md:w-[200px] border-black dark:border-white '>
                       { <FaBriefcase className='text-3xl md:ml-16 ml-40' /> }
                       <h2 className='text-2xl mb-1'>Project</h2>
                       <p>Built more than <md:br /> 2 projects </p>
@@ -172,7 +172,7 @@ const Home = () => {
 
         <section className='flex mt-16 flex-col'>
           <div className="flex flex-col  text-black dark:text-white items-center">
-            <h2 className="text-1xl">
+            <h2 className="text-xl">
               What i offer
             </h2>
             <h1 className="text-3xl font-bold">
@@ -182,8 +182,8 @@ const Home = () => {
               I am a frontend developer from Nigeria with ___ years of experience
             </p>
           </div>
-          <div className="flex md:flex-row flex-col ml-2 md:ml-20 dark:text-white justify-center gap-4 mt-10 ">
-            <div className='border-2 border-black dark:border-white h-[250px] hover:bg-slate-700 hover:shadow-lg hover:shadow-white text-center  p-4 w-[400px] md:w-[300px]   '>
+          <div className="flex md:flex-row flex-col dark:text-white justify-center gap-4 -ml-7 md:ml-12 mt-10 ">
+            <div className='border-2 border-black dark:border-white h-[250px] hover:bg-slate-700 hover:shadow-lg hover:shadow-white text-center  p-4 w-[350px] md:w-[300px]   '>
                 { <AiOutlineGlobal  className='text-3xl my-4 mx-40 md:mx-28 '/> }
                 <h2 className='text-2xl'>Web design</h2>
                 <p className=''>Web development is the process of building,programming ...</p>
@@ -192,7 +192,7 @@ const Home = () => {
                 { < FaLongArrowAltRight className='text-4xl pl-2' /> }
                 </h2>
             </div>
-            <div className='border-2 h-[250px] border-black dark:border-white hover:bg-slate-700 hover:shadow-lg hover:shadow-white text-center  p-4 w-[400px] md:w-[300px]   '>
+            <div className='border-2 h-[250px] border-black dark:border-white hover:bg-slate-700 hover:shadow-lg hover:shadow-white text-center  p-4 w-[350px] md:w-[300px]   '>
                 { <IoLogoAndroid  className='text-3xl my-4 mx-40 md:mx-28 '/> }
                 <h2 className='text-2xl'>Mobile Appps</h2>
                 <p className=''>Web development is the process of building,programming ...</p>
@@ -201,7 +201,7 @@ const Home = () => {
                 { < FaLongArrowAltRight className='text-4xl pl-2' /> }
                 </h2>
             </div>
-            <div className='border-2 h-[250px] hover:bg-slate-700 hover:shadow-lg hover:shadow-white text-center  p-4 w-[400px] md:w-[300px] border-black dark:border-white '>
+            <div className='border-2 h-[250px] hover:bg-slate-700 hover:shadow-lg hover:shadow-white text-center  p-4 w-[350px] md:w-[300px] border-black dark:border-white '>
                 { <AiOutlineGlobal  className='text-3xl my-4 mx-40 md:mx-28 '/> }
                 <h2 className='text-2xl'>Web design</h2>
                 <p className=''>Web development is the process of building,programming ...</p>
@@ -210,7 +210,7 @@ const Home = () => {
                 { < FaLongArrowAltRight className='text-4xl pl-2' /> }
                 </h2>
             </div>
-            <div className='border-2 h-[250px] hover:bg-slate-700 hover:shadow-lg hover:shadow-white text-center  p-4 w-[400px] md:w-[300px] border-black dark:border-white '>
+            <div className='border-2 h-[250px] hover:bg-slate-700 hover:shadow-lg hover:shadow-white text-center  p-4 w-[350px] md:w-[300px] border-black dark:border-white '>
                 { <IoLogoAndroid  className='text-3xl my-4 mx-40 md:mx-28 '/> }
                 <h2 className='text-2xl'>Mobile Appps</h2>
                 <p className=''>Web development is the process of building,programming ...</p>
