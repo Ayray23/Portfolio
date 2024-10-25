@@ -159,7 +159,7 @@ const Home = () => {
                 </div>
         </section>
 
-        <section className='flex flex-col'>
+        <section className='flex mt-16 flex-col'>
           <div className="flex flex-col  text-black dark:text-white items-center">
             <h2 className="text-1xl">
               What i offer
@@ -171,7 +171,7 @@ const Home = () => {
               I am a frontend developer from Nigeria with ___ years of experience
             </p>
           </div>
-          <div className="flex md:flex-row flex-col ml-20 dark:text-white justify-center gap-4 mt-10 ">
+          <div className="flex md:flex-row flex-col ml-2 md:ml-20 dark:text-white justify-center gap-4 mt-10 ">
             <div className='border-2 border-black dark:border-white h-[250px] hover:bg-slate-700 hover:shadow-lg hover:shadow-white text-center  p-4 w-[400px] md:w-[300px]   '>
                 { <AiOutlineGlobal  className='text-3xl my-4 mx-40 md:mx-28 '/> }
                 <h2 className='text-2xl'>Web design</h2>
