@@ -9,6 +9,8 @@ import Pics from '../assets/Raymond.jpg'
 import Weather from '../assets/weather.png'
 import { BsArrowBarRight } from 'react-icons/bs'
 import { useEffect,useState } from 'react'
+import House from '../assets/house.jpg'
+import Fruit from '../assets/Fruit.jpg'
  import { BiArrowFromRight } from 'react-icons/bi';
  import { FaMoon } from "react-icons/fa";
 import { TiAdjustBrightness } from 'react-icons/ti';
@@ -36,10 +38,10 @@ const Home = () => {
 
   return (
     <div className={`${darkMode && "dark"}`}>
-      <main className="flex min-h-screen flex-col p-12 dark:text-white text-black bg-white dark:bg-neutral-900">
+      <main className="flex min-h-screen flex-col dark:text-white bg-amber-100 text-black  dark:bg-black">
       <nav
       className={`fixed top-0 left-0 w-full z-50 ${
-        isSticky ? "bg-slate-700 text-black" : "bg-slate-600 text-white"
+        isSticky ? "bg-blue-700 text-black" : "bg-blue-600 text-white"
       }`}
       style={{ transition: "background-color 0.3s" }}
     >
@@ -52,10 +54,10 @@ const Home = () => {
            <NavLink to='/'> Aboutus </NavLink>
           </li>
           <li>
-            <NavLink to='/Contactme'>Contact</NavLink>
+            <NavLink to='/section'>Contact</NavLink>
           </li>
           <li>
-            <NavLink to='/Service'>Service</NavLink>
+            <NavLink to='/'>Service</NavLink>
           </li>
         </ul>
         <button 
@@ -75,7 +77,7 @@ const Home = () => {
           &#9776;
         </button>
         {menuOpen && (
-          <div className="absolute top-0 right-0 bg-slate-700 w-1/4 h-screen text-black p-6">
+          <div className="absolute top-0 right-0 bg-blue-600 w-1/4 h-screen text-black p-6">
             <ul className="flex flex-col cursor-pointer  space-y-4">
               <div className="flex justify-between items-center ">
               <li className="" onClick={() => setMenuOpen(false)}  >
@@ -113,22 +115,21 @@ const Home = () => {
     </nav>
 
           <>
-          <section className='pt-16 flex dark:text-white text-black  flex-col items-center justify-center '>
-        <img src={Pics} alt="" className='h-[250px] md:mt-12 mb-4 w-[250px] rounded-[50%]' />
-        <h2>Hi! I am Raymond </h2>
-        <h1 className='text-3xl font-bold font-serif md:text-4xl mt-4 text-center'>frontend web <br/>developer based in</h1>
-        <h4 className='text-1xl font-semibold px-6'>
-          I am a frontend developer from Osun state,Nigeria with ___ years of experience in multiple  
-        </h4>
-        <div className='flex gap-10'>
-          <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-slate-600 hover:bg-slate-800 mt-7'>Contact me
-          <BsArrowBarRight className='text-2xl'/>
-          </button>
-          <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-slate-600 hover:bg-slate-800 mt-7'>My resume
-          <BsArrowBarRight className='text-2xl'/>
-          </button>
-        </div>
-      </section>
+            <section className="pt-16 my-1 h-screen flex flex-col items-center justify-center dark:text-white text-black bg-blue-600 dark:bg-black  ">
+              <img src={Pics} alt="" className="mt-12 h-[250px] w-[250px] rounded-full shadow-lg mb-4 transition-all duration-500 transform hover:scale-105" />
+              <h2 className="text-3xl font-bold font-serif md:text-5xl mt-4 text-center animate-fadeIn">Hi! I am Raymond</h2>
+              <h4 className="text-xl font-semibold mt-2 text-center">
+                I am a frontend developer based in Osun state, Nigeria with ___ years of experience.
+              </h4>
+              <div className="flex gap-10 my-8">
+                <button className="px-4 py-2 bg-purple-600 text-white font-semibold rounded-full shadow-lg hover:bg-purple-800 hover:scale-105 transition-all duration-300">
+                  Contact Me
+                </button>
+                <button className="px-4 py-2 bg-blue-900 text-white font-semibold rounded-full shadow-lg hover:bg-blue-950 hover:scale-105 transition-all duration-300">
+                  My Resume
+                </button>
+              </div>
+            </section>
           
           </>
 
@@ -147,19 +148,19 @@ const Home = () => {
                   <p className='mt-8  md:mx-16 font-serif font-medium'>
                     I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.
                   </p>
-                  <div className='flex md:flex-row md:ml-16 flex-col md:items-center mt-6  md:justify-center gap-8'>
-                    <div className='border-2 h-[200px] ml-4  hover:shadow-lg hover:shadow-white text-center  p-4 w-[350px] md:w-[200px]  dark:border-white border-black '>
-                      { <PiPentagramBold className='text-3xl md:ml-16 ml-40' /> }
+                  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:ml-16 sm:-ml-14 flex-col md:items-center mt-6  md:justify-center gap-24'>
+                    <div className='border-2 h-[200px]  ml-4  hover:shadow-lg hover:shadow-white text-center  p-4 w-full md:w-[150px]  dark:border-white border-black '>
+                      { <PiPentagramBold className='text-3xl md:ml-10 ml-24' /> }
                       <h2 className='text-2xl'>Languages</h2>
                       <p className=''>HTML,CSS, <md:br />JavaScript, <br />React Js, <md:br />Vite</p>
                     </div>
-                    <div className='border-2 hover:shadow-lg hover:shadow-white  h-[200px] text-center p-4 ml-4 w-[350px]  md:w-[200px] border-black dark:border-white '>
-                      { <FaGraduationCap className='text-3xl md:ml-16 ml-40' /> }
+                    <div className='border-2 hover:shadow-lg hover:shadow-white  h-[200px] text-center p-4 ml-4 w-full  md:w-[150px] border-black dark:border-white '>
+                      { <FaGraduationCap className='text-3xl md:ml-10 ml-28 ' /> }
                       <h2 className='text-2xl'>Education</h2>
                       <p>B.Tech in <md:br /> Software <md:br /> Engineering</p>
                     </div>
-                    <div className='border-2 h-[200px] hover:shadow-lg hover:shadow-white  text-center p-4 ml-4 w-[350px] md:w-[200px] border-black dark:border-white '>
-                      { <FaBriefcase className='text-3xl md:ml-16 ml-40' /> }
+                    <div className='border-2 h-[200px] hover:shadow-lg hover:shadow-white  text-center p-4 ml-4 w-full md:w-[150px] border-black dark:border-white '>
+                      { <FaBriefcase className='text-3xl md:ml-10 ml-24' /> }
                       <h2 className='text-2xl mb-1'>Project</h2>
                       <p>Built more than <md:br /> 2 projects </p>
                     </div>
@@ -182,39 +183,39 @@ const Home = () => {
               I am a frontend developer from Nigeria with ___ years of experience
             </p>
           </div>
-          <div className="flex md:flex-row flex-col dark:text-white justify-center gap-4 -ml-7 md:ml-12 mt-10 ">
-            <div className='border-2 border-black dark:border-white h-[250px] hover:bg-slate-700 hover:shadow-lg hover:shadow-white text-center  p-4 w-[350px] md:w-[300px]   '>
-                { <AiOutlineGlobal  className='text-3xl my-4 mx-40 md:mx-28 '/> }
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 pr-8 dark:text-white justify-center gap-4 ml-12 md:ml-4 mt-10 ">
+            <div className='border-2 hover:bg-blue-700 border-black dark:border-white h-[250px] hover:text-white hover:shadow-2xl hover:shadow-blue-900  text-center  p-4 w-full md:w-[250px] '>
+                { <AiOutlineGlobal  className='text-3xl my-4 mx-20 md:mx-24 '/> }
                 <h2 className='text-2xl'>Web design</h2>
                 <p className=''>Web development is the process of building,programming ...</p>
-                <h2 className="flex  justify-center items-center pt-12 gap-2 ">
+                <h2 className="flex  justify-center items-center pt-4 gap-2 ">
                 Read more
                 { < FaLongArrowAltRight className='text-4xl pl-2' /> }
                 </h2>
             </div>
-            <div className='border-2 h-[250px] border-black dark:border-white hover:bg-slate-700 hover:shadow-lg hover:shadow-white text-center  p-4 w-[350px] md:w-[300px]   '>
-                { <IoLogoAndroid  className='text-3xl my-4 mx-40 md:mx-28 '/> }
+            <div className='border-2 hover:bg-blue-700 border-black dark:border-white h-[250px] hover:text-white hover:shadow-2xl hover:shadow-blue-900  text-center  p-4 w-full md:w-[250px] '>
+                { <IoLogoAndroid  className='text-3xl my-4 mx-20 md:mx-24 '/> }
                 <h2 className='text-2xl'>Mobile Appps</h2>
                 <p className=''>Web development is the process of building,programming ...</p>
-                <h2 className="flex justify-center items-center pt-12 gap-2 ">
+                <h2 className="flex justify-center items-center pt-4 gap-2 ">
                 Read more
                 { < FaLongArrowAltRight className='text-4xl pl-2' /> }
                 </h2>
             </div>
-            <div className='border-2 h-[250px] hover:bg-slate-700 hover:shadow-lg hover:shadow-white text-center  p-4 w-[350px] md:w-[300px] border-black dark:border-white '>
-                { <AiOutlineGlobal  className='text-3xl my-4 mx-40 md:mx-28 '/> }
+            <div className='border-2 hover:bg-blue-700 border-black dark:border-white h-[250px] hover:text-white hover:shadow-2xl hover:shadow-blue-900  text-center  p-4 w-full md:w-[250px] '>
+                { <AiOutlineGlobal  className='text-3xl my-4 mx-20 md:mx-24 '/> }
                 <h2 className='text-2xl'>Web design</h2>
                 <p className=''>Web development is the process of building,programming ...</p>
-                <h2 className="flex  justify-center items-center pt-12 gap-2 ">
+                <h2 className="flex  justify-center items-center pt-4 gap-2 ">
                 Read more
                 { < FaLongArrowAltRight className='text-4xl pl-2' /> }
                 </h2>
             </div>
-            <div className='border-2 h-[250px] hover:bg-slate-700 hover:shadow-lg hover:shadow-white text-center  p-4 w-[350px] md:w-[300px] border-black dark:border-white '>
-                { <IoLogoAndroid  className='text-3xl my-4 mx-40 md:mx-28 '/> }
+            <div className='border-2 hover:bg-blue-700 border-black dark:border-white h-[250px] hover:text-white hover:shadow-2xl hover:shadow-blue-900  text-center  p-4 w-full md:w-[250px] '>
+                { <IoLogoAndroid  className='text-3xl my-4 mx-20  md:mx-24 '/> }
                 <h2 className='text-2xl'>Mobile Appps</h2>
                 <p className=''>Web development is the process of building,programming ...</p>
-                <h2 className="flex justify-center  items-center pt-12 gap-2 ">
+                <h2 className="flex justify-center  items-center pt-4 gap-2 ">
                 Read more
                 { < FaLongArrowAltRight className='text-4xl pl-2' /> }
                 </h2>
@@ -233,50 +234,59 @@ const Home = () => {
         Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.
       </p>
 
-      {/* Project Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
-        {/* Card 1 */}
-        <div className="bg-white text-black border-2 rounded-lg shadow-lg overflow-hidden">
+      <div className="grid grid-cols-1 mx-16 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+      <div className="bg-white dark:bg-neutral-800 text-black dark:text-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-xl">
           <img src={Weather} alt="Frontend project" className="w-full h-40 object-cover" />
           <div className="p-4">
-            <h3 className="font-bold text-xl mb-2">Frontend project</h3>
-            <p className="text-gray-700 mb-4">Web Design</p>
-            <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-slate-600 hover:bg-slate-800 mt-7'>Read More
+            <h3 className="font-bold text-xl mb-2">Web based app</h3>
+            <p className="text-gray-700 mb-4">Web App</p>
+            <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-blue-700 hover:bg-blue-800 hover:text-white mt-7'>
+              <a 
+              href="https://weather-app-raymond-s-projects-ac2c129d.vercel.app/">
+                Read More
+              </a>
           <BsArrowBarRight className='text-2xl'/>
           </button>
           </div>
         </div>
 
         
-        <div className="bg-white text-black border-2 rounded-lg shadow-lg overflow-hidden">
-          <img src={Logo} alt="Geo based app" className="w-full h-40 object-cover" />
+        <div className="bg-white dark:bg-neutral-800 text-black dark:text-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-xl">
+          <img src={Fruit} alt="Geo based app" className="w-full h-40 object-cover" />
           <div className="p-4">
-            <h3 className="font-bold text-xl mb-2">Geo based app</h3>
-            <p className="text-gray-700 mb-4">Mobile App</p>
-            <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-slate-600 hover:bg-slate-800 mt-7'>Read More
+            <h3 className="font-bold text-xl mb-2">Frontend project </h3>
+            <p className="text-gray-700 mb-4">Web Design</p>
+            <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-blue-700 hover:bg-blue-800 hover:text-white mt-7'>
+              <a href="https://food-page-eta.vercel.app/">
+              Read More
+              </a>
           <BsArrowBarRight className='text-2xl'/>
           </button>
           </div>
         </div>
 
         
-        <div className="bg-white border-2 text-black rounded-lg shadow-lg overflow-hidden">
-          <img src={Logo} alt="Photography site" className="w-full h-40 object-cover" />
+        <div className="bg-white dark:bg-neutral-800 text-black dark:text-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-xl">
+          <img src={House} alt="Photography site" className="w-full h-40 object-cover" />
           <div className="p-4">
-            <h3 className="font-bold text-xl mb-2">Photography site</h3>
+            <h3 className="font-bold text-xl mb-2">Tailwind css Project</h3>
             <p className="text-gray-700 mb-4">Web Design</p>
-            <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-slate-600 hover:bg-slate-800 mt-7'>Read More
+            <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-blue-700 hover:bg-blue-800 hover:text-white mt-7'>
+              <a href="https://ayray23.github.io/landing_page_tailwindcss/">
+              Read More
+              </a>
+              
           <BsArrowBarRight className='text-2xl'/>
           </button>
           </div>
         </div>
 
-        <div className="bg-white text-black rounded-lg shadow-lg overflow-hidden">
+        <div className="bg-white dark:bg-neutral-800 text-black dark:text-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-xl">
           <img src={Logo} alt="UI/UX designing" className="w-full h-40 object-cover" />
           <div className="p-4">
             <h3 className="font-bold text-xl mb-2">UI/UX designing</h3>
             <p className="text-gray-700 mb-4">UI/UX Design</p>
-            <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-slate-600 hover:bg-slate-800 mt-7'>Read More
+            <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-blue-700 hover:bg-blue-800 hover:text-white mt-7'>Read More
           <BsArrowBarRight className='text-2xl'/>
           </button>
           </div>
@@ -285,7 +295,6 @@ const Home = () => {
     </div>
 
         </section>
-
 
 
       

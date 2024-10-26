@@ -9,7 +9,7 @@ import Home from './Pages/Home';
 // import Darkmood from './Pages/Darkmood';
 function App() {
   return (
-    <div className='min-h-screen dark:bg-white dark:text-white bg-slate-600'>
+    <div className='min-h-screen '>
       {/* <Header /> */}
       <Routes>
         <Route path="/" element={<Home />}  />

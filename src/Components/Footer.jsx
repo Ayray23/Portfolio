@@ -1,8 +1,8 @@
 import { BsMailbox } from 'react-icons/bs'
 const Footer = () => {
   return (
-    <>
-       <footer className=" text-black bg-slate-600  dark:text-white py-6 mt-10">
+    < >
+       <footer className=" text-black bg-blue-700  dark:text-white py-6 ">
       <div className=" mx-auto text-center">
         {/* Brand Name */}
         <h1 className="text-3xl font-bold mb-2">Raymond<span className="text-purple-600">.</span></h1>
