@@ -1,61 +1,88 @@
-import { FaArrowRight } from "react-icons/fa";
-import Weather from '../assets/weather.png'
-import React from 'react';
+// import { FaArrowRight } from "react-icons/fa";
 import Logo from '../assets/1 (2).png'
+import Weather from '../assets/weather.png'
+import House from '../assets/house.jpg'
+import Fruit from '../assets/Fruit.jpg'
+import { BsArrowBarRight } from 'react-icons/bs'
 
-const Portfolio = () => {
+const Portfolio = ({darkMode}) => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center text-white">
-      <div className="text-center mt-8 mb-12">
-        <h2 className="text-2xl font-semibold">My portfolio</h2>
-        <h1 className="text-5xl font-bold mt-2">My latest work</h1>
-        <p className="text-lg mt-4">
-          Welcome to my web development portfolio! Explore a collection of projects
-          showcasing my expertise in front-end development.
-        </p>
-      </div>
+    <section className={`${darkMode && "dark"}`}>
+        <div className=" text-black pt-8 dark:text-white min-h-screen flex flex-col justify-center items-center dark:bg-black">
+      
+      <h1 className="text-4xl font-bold mb-4">My portfolio</h1>
+      <h2 className="text-2xl font-semibold mb-6">My latest work</h2>
+      <p className="text-lg text-center mb-12 max-w-lg">
+        Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.
+      </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-16">
-        <PortfolioItem
-          title="Frontend project"
-          category="Web Design"
-          image={Logo}
-        />
-        <PortfolioItem
-          title="Weather Forcast Site"
-          category="Web design"
-          image={Weather}
-        />
-        <PortfolioItem
-          title="Photography site"
-          category="Web Design"
-          image={Logo}
-        />
-        <PortfolioItem
-          title="UI/UX designing"
-          category="UI/UX Design"
-          image={Logo}
-        />
+      <div className="grid grid-cols-1 mx-16 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+      <div className="dark:text-white  dark:bg-neutral-800 text-grey-600 text-black  rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-xl">
+          <img src={Weather} alt="Frontend project" className="w-full h-40 object-cover" />
+          <div className="p-4">
+            <h3 className="font-bold text-xl mb-2">Web based app</h3>
+            <p className=" mb-4">Web App</p>
+            <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-blue-700 hover:bg-blue-800 hover:text-white mt-7'>
+              <a target="_blank"
+              href="https://weather-app-raymond-s-projects-ac2c129d.vercel.app/">
+                Read More
+              </a>
+          <BsArrowBarRight className='text-2xl'/>
+          </button>
+          </div>
+        </div>
+
+        
+        <div className="bg-white dark:text-white  dark:bg-neutral-800 text-grey-600  rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-xl">
+          <img src={Fruit} alt="Geo based app" className="w-full h-40 object-cover" />
+          <div className="p-4">
+            <h3 className="font-bold text-xl mb-2">Frontend project </h3>
+            <p className=" mb-4">Web Design</p>
+            <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-blue-700 hover:bg-blue-800 hover:text-white mt-7'>
+              <a target="_blank" 
+              href="https://food-page-eta.vercel.app/">
+              Read More
+              </a>
+          <BsArrowBarRight className='text-2xl'/>
+          </button>
+          </div>
+        </div>
+
+        
+        <div className="bg-white dark:text-white  dark:bg-neutral-800 text-grey-600 rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-xl">
+          <img src={House} alt="Photography site" className="w-full h-40 object-cover" />
+          <div className="p-4">
+            <h3 className="font-bold text-xl mb-2">Tailwind css Project</h3>
+            <p className=" mb-4">Web Design</p>
+            <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-blue-700 hover:bg-blue-800 hover:text-white mt-7'>
+              <a target="_blank" 
+              href="https://ayray23.github.io/landing_page_tailwindcss/">
+              Read More
+              </a>
+              
+          <BsArrowBarRight className='text-2xl'/>
+          </button>
+          </div>
+        </div>
+
+        <div className="bg-white dark:text-white  text-grey-600 dark:bg-neutral-800 text-black  rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-xl">
+          <img src={Logo} alt="UI/UX designing" className="w-full h-40 object-cover" />
+          <div className="p-4">
+            <h3 className="font-bold text-xl mb-2">UI/UX designing</h3>
+            <p className=" mb-4">UI/UX Design</p>
+            <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-blue-700 hover:bg-blue-800 hover:text-white mt-7'>Read More
+          <BsArrowBarRight className='text-2xl'/>
+          </button>
+          </div>
+        </div>
       </div>
     </div>
+
+        </section>
   );
 };
 
-const PortfolioItem = ({ title, category, image }) => {
-  return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-      <img className="w-full h-48 object-cover" src={image} alt={title} />
-      <div className="p-4">
-        <h3 className="text-xl font-bold text-gray-800">{title}</h3>
-        <p className="text-gray-600">{category}</p>
-        <button className="mt-4 gap-2  inline-flex items-center px-3 py-2 bg-slate-600 text-white font-medium rounded-md hover:bg-slate-800 focus:outline-none">
-          <span>Explore</span>
-          <FaArrowRight/>
-        </button>
-      </div>
-    </div>
-  );
-};
+
 
 export default Portfolio;
 
