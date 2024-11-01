@@ -20,18 +20,13 @@ function App() {
 
   return (
     <div className='min-h-screen '>
-      {/* <Header /> */}
-      <Routes>
-        <Route path="/" element={<Home darkMode={darkMode} toggleDarkMode={toggleDarkMode} />}  />
-        {/* <Route path="Aboutme" element={<Aboutme darkMode={darkMode}/>}  />
-         <Route path="Service" element={ <Service darkMode={darkMode}/>}  /> 
-         <Route path="" element={<Portfolio darkMode={darkMode} />}  /> 
-         <Route path="" element={<Contactme darkMode={darkMode}/>}  />  */}
-      </Routes>
+     <Routes>
+      
+     </Routes>
+      <Home darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Aboutme darkMode={darkMode}/>
         <Service darkMode={darkMode}/>
         <Portfolio darkMode={darkMode} />
-        {/* <Darkmood/> */}
        <Contactme darkMode={darkMode}/> 
       <Footer />
     </div>

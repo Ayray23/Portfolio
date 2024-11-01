@@ -4,7 +4,7 @@ import { Link,NavLink } from 'react-router-dom';
 // import { FaLongArrowAltRight } from "react-icons/fa";
 // import { AiOutlineGlobal } from "react-icons/ai";
 // import { IoLogoAndroid } from "react-icons/io";
-
+import Contactme from './Contactme'
 import Pics from '../assets/Raymond.jpg'
 import { useEffect,useState } from 'react'
 
@@ -85,10 +85,10 @@ const Home = ({darkMode, toggleDarkMode}) => {
               <NavLink to='/'> Aboutme </NavLink>
                 </li>
               <li onClick={() => setMenuOpen(false)}>
-                <NavLink to='/Contactme'>Contact</NavLink>
+                <NavLink to='#Contactme'>Contact</NavLink>
                 </li>
               <li onClick={() => setMenuOpen(false)}>
-              <NavLink to='/Service'>Service</NavLink>
+              <NavLink to='#Service'>Service</NavLink>
                 
                 </li>
             </ul>
@@ -111,36 +111,44 @@ const Home = ({darkMode, toggleDarkMode}) => {
 
           <>
           
-          <>
-          <div className='relative overflow-hidden min-h-[550px] sm:min-h-[650px] flex flex-col items-center'>
-          <div className='md:h-[720px] h-[990px] md:w-[1600px] w-[900px] bg-gradient-to-r absolute  bg-blue-950 rounded-full transform rotate-6 -top-40 z-0'></div>
-          <section className='flex flex-col md:flex-row items-center justify-center w-full px-4 md:px-52 pb-4 md:pd-24 md:pt-32 pt-24 md:pb-24 mt-24 md:mt-0 z-10'>
+         
+          
+        <>
+      <div className='relative dark:bg-black bg-gray-200  overflow-hidden min-h-[550px] sm:min-h-[650px] flex flex-col items-center'>
+        {/* Curved Background with Left Alignment */}
+        <div className='md:h-[720px] h-[990px] md:w-[1800px] w-[900px] bg-gradient-to-r absolute bg-blue-950 rounded-full transform  -top-20 -left-80 -right-40 rotate-45 z-0'></div>
+        
+        {/* Main Section */}
+        <section className='flex flex-col md:flex-row items-center justify-center w-full px-4 md:px-52 pb-4 md:pb-24 md:pt-32 pt-24 md:mt-0 mt-24 z-10'>
+          
+          {/* Image Section - Left Side */}
+          <div data-aos='fade-up' className='flex-1 flex justify-center md:justify-start mt-0 md:mt-0'>
+            <img src={Pics} alt="Hero Image" className='h-[300px] sm:h-[400px] md:h-[440px] w-[250px] sm:w-[360px] object-cover rounded-lg' />
+          </div>
+          
+          {/* Text Section - Right Side */}
           <div data-aos='fade-up' className='flex-1 md:text-left mt-10 md:mt-0'>
-            <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4'>Hi Am Raymond</h1>
+            <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-50 mb-4'>Hi, I'm Raymond</h1>
             <h4 data-aos='fade-up' data-aos-delay='300' className='text-base sm:text-lg md:text-lg text-gray-300 mb-6'>
-                I am a frontend developer based in Osun state, Nigeria with ___ years of experience.
-              </h4>
-            <button type="button" className="text-gray-900 mt-4 bg-white hover:bg-blue-300 font-semibold rounded-full text-sm px-5 py-2.5 text-center ">
-              Contact
-            </button>
-          </div>
-          <div data-aos='fade-up' className='flex-1 flex justify-center md:justify-end mt-0 md:mt-0'>
-          <img src={Pics} alt="Hero Image" className='h-[300px] sm:h-[400px] md:h-[440px] w-[250px] sm:w-[360px] object-cover rounded-lg' />
+              I am a frontend developer based in Osun state, Nigeria with ___ years of experience.
+            </h4>
 
+            <Link to="/Contactme">
+  <button type="button" className="text-white mt-4 border-2 hover:bg-blue-900 hover:shadow-2xl font-semibold rounded-full text-sm px-5 py-2.5 text-center">
+    Contact
+  </button>
+</Link>
           </div>
+
         </section>
-
-          </div>
-          
-          </>
-          
+      </div>
+    </>
           </>
 
         <>
        
 
        
-
 
         
         
