@@ -26,7 +26,7 @@ const Home = ({darkMode, toggleDarkMode}) => {
 
   return (
     <div className={`${darkMode && "dark"}`}>
-      <main className="flex flex-col dark:text-white dark:bg-black bg-gray-50 text-black ">
+      <main className="flex flex-col dark:text-white dark:bg-black bg-gray-600 text-black ">
         <nav className={`fixed top-0 left-0 w-full z-50 ${
           isSticky ? "bg-blue-700 text-white" : "bg-blue-600 text-white"
         }`}
@@ -115,7 +115,7 @@ const Home = ({darkMode, toggleDarkMode}) => {
 
         <>
         <>
-          <div className='relative dark:bg-black bg-gray-200  overflow-hidden min-h-[550px] sm:min-h-[500px] flex flex-col items-center'>
+          <div className='relative dark:bg-black bg-gray-400  overflow-hidden min-h-[550px] sm:min-h-[500px] flex flex-col items-center'>
           
             <div className='md:h-[720px] h-[850px]  md:w-[1800px] w-[900px] bg-gradient-to-r absolute bg-blue-950 rounded-full transform  -top-20 -left-80 -right-40 rotate-45 z-0'>
             </div>
@@ -125,9 +125,9 @@ const Home = ({darkMode, toggleDarkMode}) => {
               <div data-aos='fade-up' className='flex-1 flex justify-center md:justify-start mt-0 md:mt-0'>
                 <img src={Pics} alt="Hero Image" className='h-[300px] sm:h-[400px] md:h-[440px] w-[250px] sm:w-[360px] object-cover rounded-lg' />
               </div>
-              <div data-aos='fade-up' className='text-gray-300 flex-1 md:text-left mt-10 md:mt-0'>
-                <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold text-gray-300 mb-4'>Hi, I'm Raymond</h1>
-                <h4 data-aos='fade-up' data-aos-delay='300' className='text-base sm:text-lg md:text-lg text-gray-300 mb-6'>
+              <div data-aos='fade-up' className='text-white flex-1 md:text-left mt-10 md:mt-0'>
+                <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4'>Hi, I'm Raymond</h1>
+                <h4 data-aos='fade-up' data-aos-delay='300' className='text-base sm:text-lg md:text-lg  mb-6'>
                   I am a frontend developer based in Osun state, Nigeria with ___ years of experience.
                 </h4>
                 <a href="#contact">
