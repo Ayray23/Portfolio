@@ -23,9 +23,9 @@ const ContactForm = ({darkMode}) => {
   };
 
   return (
-    <section className={`${darkMode && "dark"}`}>
+    <section id='contact' className={`${darkMode && "dark"}`}>
       
-        <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-black p-4">
+        <div className="flex items-center justify-center  bg-gray-100 dark:bg-black p-4">
           <div className="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
             <h2 className="text-2xl font-bold text-center mb-6">Contact Me</h2>
             <form ref={form} onSubmit={sendEmail} className="space-y-4">
@@ -58,7 +58,7 @@ const ContactForm = ({darkMode}) => {
               ></textarea>
               <button
                 type="submit"
-                className="w-full py-2 bg-indigo-500 text-white font-semibold rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full py-2 bg-blue-700 text-white font-semibold rounded-md hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               >
                 Send Message
               </button>

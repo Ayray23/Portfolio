@@ -4,12 +4,12 @@ import { PiPentagramBold } from "react-icons/pi";
 
 const Aboutme = ({darkMode}) => {
   return (
-    <section className={`${darkMode && "dark"}`}>
+    <section id='aboutme' className={`${darkMode && "dark"}`}>
       <div className='flex h-fit  md:flex-row flex-col dark:bg-black text-black dark:text-white'>
-              <div className='md:w-[40%] mt-20'>
+              <div className='md:w-[40%] '>
                 { <img src={Pics} alt="" /> }
               </div>
-              <div className='md:mt-0 mt-8 md:w-[60%] flex flex-col  justify-center items-center'>
+              <div className='md:mt-0 mt-8 px-2 md:w-[60%] flex flex-col  justify-center items-center'>
                 <h5 className='text-xl'>
                   Introduction
                 </h5>

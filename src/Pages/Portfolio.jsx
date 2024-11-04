@@ -1,4 +1,3 @@
-// import { FaArrowRight } from "react-icons/fa";
 import Logo from '../assets/1 (2).png'
 import Weather from '../assets/weather.png'
 import House from '../assets/house.jpg'
@@ -16,13 +15,13 @@ const Portfolio = ({darkMode}) => {
         Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.
       </p>
 
-      <div className="grid grid-cols-1 mx-16 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+      <div className="grid grid-cols-1 md:mx-16 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
       <div className="dark:text-white  dark:bg-neutral-800 text-grey-600 text-black  rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-xl">
           <img src={Weather} alt="Frontend project" className="w-full h-40 object-cover" />
           <div className="p-4">
             <h3 className="font-bold text-xl mb-2">Web based app</h3>
             <p className=" mb-4">Web App</p>
-            <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-blue-700 hover:bg-blue-800 hover:text-white mt-7'>
+            <button className='border-2 flex items-center gap-2 rounded-md p-2 text-white bg-blue-700 hover:bg-blue-800 hover:text-white mt-7'>
               <a target="_blank"
               href="https://weather-app-raymond-s-projects-ac2c129d.vercel.app/">
                 Read More
@@ -38,7 +37,7 @@ const Portfolio = ({darkMode}) => {
           <div className="p-4">
             <h3 className="font-bold text-xl mb-2">Frontend project </h3>
             <p className=" mb-4">Web Design</p>
-            <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-blue-700 hover:bg-blue-800 hover:text-white mt-7'>
+            <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-blue-700 hover:bg-blue-800 text-white mt-7'>
               <a target="_blank" 
               href="https://food-page-eta.vercel.app/">
               Read More
@@ -54,7 +53,7 @@ const Portfolio = ({darkMode}) => {
           <div className="p-4">
             <h3 className="font-bold text-xl mb-2">Tailwind css Project</h3>
             <p className=" mb-4">Web Design</p>
-            <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-blue-700 hover:bg-blue-800 hover:text-white mt-7'>
+            <button className='border-2 text-white flex items-center gap-2 rounded-md p-2 bg-blue-700 hover:bg-blue-800text-white mt-7'>
               <a target="_blank" 
               href="https://ayray23.github.io/landing_page_tailwindcss/">
               Read More
@@ -70,7 +69,7 @@ const Portfolio = ({darkMode}) => {
           <div className="p-4">
             <h3 className="font-bold text-xl mb-2">UI/UX designing</h3>
             <p className=" mb-4">UI/UX Design</p>
-            <button className='border-2 flex items-center gap-2 rounded-md p-2 bg-blue-700 hover:bg-blue-800 hover:text-white mt-7'>Read More
+            <button className='border-2 flex text-white items-center gap-2 rounded-md p-2 bg-blue-700 hover:bg-blue-800text-white mt-7'>Read More
           <BsArrowBarRight className='text-2xl'/>
           </button>
           </div>

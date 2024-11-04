@@ -1,5 +1,4 @@
 import { Route ,Routes } from 'react-router-dom';
-import Header from './Components/Header';
 import Footer from './Components/Footer'
 import Home from './Pages/Home';
 import Aboutme from './Pages/Aboutme';
@@ -7,8 +6,6 @@ import Service from './Pages/Service';
 import Contactme from './Pages/Contactme';
 import Portfolio from './Pages/Portfolio';
 import { useState } from 'react';
-import HomeAbout from './Pages/HomeAbout';
-// import Darkmood from './Pages/Darkmood';
 function App() {
 
   const [darkMode, setDarkMode] = useState(false);
@@ -16,12 +13,9 @@ function App() {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     };
-
-
   return (
     <div className='min-h-screen '>
      <Routes>
-      
      </Routes>
       <Home darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Aboutme darkMode={darkMode}/>
@@ -32,5 +26,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
