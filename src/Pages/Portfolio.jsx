@@ -3,7 +3,7 @@ import Weather from '../assets/weather.png'
 import House from '../assets/house.jpg'
 import Fruit from '../assets/Fruit.jpg'
 import { BsArrowBarRight } from 'react-icons/bs'
-
+import libary from '../assets/library-img.jpg'
 const Portfolio = ({darkMode}) => {
   return (
     <section className={`${darkMode && "dark"}`}>
@@ -64,12 +64,19 @@ const Portfolio = ({darkMode}) => {
           </div>
         </div>
 
-        <div className="bg-white dark:text-white  text-grey-600 dark:bg-neutral-800 text-black  rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-xl">
-          <img src={Logo} alt="UI/UX designing" className="w-full h-40 object-cover" />
+        
+        
+        <div className="bg-white dark:text-white  dark:bg-neutral-800 text-grey-600 rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-xl">
+          <img src={libary} alt="Photography site" className="w-full h-40 object-cover" />
           <div className="p-4">
-            <h3 className="font-bold text-xl mb-2">UI/UX designing</h3>
-            <p className=" mb-4">UI/UX Design</p>
-            <button className='border-2 flex text-white items-center gap-2 rounded-md p-2 bg-blue-700 hover:bg-blue-800text-white mt-7'>Read More
+            <h3 className="font-bold text-xl mb-2">Book Search library</h3>
+            <p className=" mb-4">An API search app</p>
+            <button className='border-2 text-white flex items-center gap-2 rounded-md p-2 bg-blue-700 hover:bg-blue-800text-white mt-7'>
+              <a target="_blank" 
+              href="https://book-search-app-snowy.vercel.app/book">
+              Read More
+              </a>
+              
           <BsArrowBarRight className='text-2xl'/>
           </button>
           </div>
