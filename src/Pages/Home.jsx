@@ -17,7 +17,7 @@ const Home = ({ darkMode, toggleDarkMode }) => {
 
   return (
     <div className={`${darkMode && "dark"}`}>
-      <main className="flex flex-col dark:text-white dark:bg-black bg-gray-600 text-black ">
+      <main className="flex flex-col dark:text-white dark:bg-black bg-blue-600 text-black ">
 
         <nav className={`fixed top-0 left-0 w-full z-50 ${isSticky ? "bg-blue-700" : "bg-blue-600"} text-white`}>
 
