@@ -40,7 +40,7 @@ const Home = ({ darkMode, toggleDarkMode }) => {
           </div>
         </nav>
 
-        <div className='relative dark:bg-black bg-gray-400 min-h-[550px] flex items-center justify-center pt-32'>
+        <div className='relative dark:bg-black bg-blue-600 min-h-[550px] flex items-center justify-center pt-32'>
           <section className='flex flex-col md:flex-row items-center w-full px-4 md:px-52 pb-24 z-10'>
             <img src={Pics} className='h-[350px] w-[300px] object-cover rounded-lg' />
 
