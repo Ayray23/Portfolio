@@ -23,7 +23,7 @@ const Home = ({ darkMode, toggleDarkMode }) => {
 
           <div className="container justify-between mx-auto px-4 py-3 flex items-center">
 
-            <Link to="/" className="text-2xl font-bold">Add Your Name Here</Link>
+            <Link to="/" className="text-2xl font-bold">Amobi Qasim Muhammad Awwal</Link>
 
             <ul className="hidden gap-4 p-4 md:flex">
               <li><a href="/">Home</a></li>
@@ -45,9 +45,9 @@ const Home = ({ darkMode, toggleDarkMode }) => {
             <img src={Pics} className='h-[350px] w-[300px] object-cover rounded-lg' />
 
             <div className='text-white flex-1 md:text-left mt-10 md:mt-0 md:ml-10'>
-              <h1 className='text-5xl font-bold mb-4'>Hi, I'm Add Your Name Here</h1>
+              <h1 className='text-5xl font-bold mb-4'>Hi, I'm Amobi Qasim Muhammad Awwal</h1>
               <p className='text-lg mb-6'>
-                A professional frontend developer based in Nigeria with over 5 years of experience building scalable web applications.
+                A professional frontend developer based in Nigeria with over 2 years of experience building scalable web applications.
               </p>
               <a href="#contact">
                 <button className="text-white border-2 hover:bg-blue-900 rounded-full px-6 py-2">

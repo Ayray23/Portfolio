@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="mx-auto text-center">
 
         <h1 className="text-3xl font-bold mb-2">
-          Add Your Name Here<span className="text-purple-600">.</span>
+          Amobi Qasim Muhammad Awwal<span className="text-purple-600">.</span>
         </h1>
 
         <a href="mailto:yourmail@gmail.com" className="flex justify-center">

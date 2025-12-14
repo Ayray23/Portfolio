@@ -10,7 +10,7 @@ const Service = ({ darkMode }) => {
         <div className="flex flex-col items-center">
           <h2 className="text-xl">What I Offer</h2>
           <h1 className="text-3xl font-bold">My Services</h1>
-          <p>I am a professional frontend developer with over 5 years of industry experience</p>
+          <p>I am a professional frontend developer with over 2 years of industry experience</p>
         </div>
 
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-center gap-4 ml-12 md:ml-4 mt-10">
