@@ -23,7 +23,7 @@ const Home = ({ darkMode, toggleDarkMode }) => {
 
           <div className="container justify-between mx-auto px-4 py-3 flex items-center">
 
-            <Link to="/" className="text-2xl font-bold">Amobi Qasim Muhammad Awwal</Link>
+            <Link to="/" className="text-2xl font-bold">Jafar_Hub</Link>
 
             <ul className="hidden gap-4 p-4 md:flex">
               <li><a href="/">Home</a></li>
